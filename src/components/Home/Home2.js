@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
 import {
   AiFillGithub,
   AiOutlineMail,
@@ -25,12 +23,12 @@ function Home2() {
               But at heart, I am a passionate and curious programmer. I began this journey when I was 11 and in the 5th grade. 
               I joined an after school coding club at Munich International School (MIS). 
               I learned how to code games on&nbsp;
-              <a class = "textlink" target="_blank" href="https://scratch.mit.edu/users/suadesai17gmailcom/">Scratch.com</a>
+              <a class = "textlink" target="_blank" rel="noreferrer" href="https://scratch.mit.edu/users/suadesai17gmailcom/">Scratch.com</a>
               &nbsp;with Javascript. Then I moved back to the Califorian city 
               I was born in. I began learning new things in Gale Ranch Middle School including basic web and app development. 
               Since then I have coded many projects including: apps, websites, 
               machine learning algorithms; for personal projects,&nbsp; 
-              <a class = "textlink" target="_blank" href="https://devpost.com/suadesai17?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">hackathons</a> 
+              <a class = "textlink" target="_blank" rel="noreferrer" href="https://devpost.com/suadesai17?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">hackathons</a> 
               , internships, and more. You can see some of those projects/publications below and through my LinkedIn.
             </p>
           </Col>
