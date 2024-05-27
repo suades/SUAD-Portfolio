@@ -51,7 +51,7 @@ function Projects() {
               title="Portfolio"
               description="The website you are currently on is my portfolio for all the works I have done and will do. I used React, Bootstrap, Node.js, and HTML/CSS to make this website from scratch. It has a lot of cool animations and information about me. Have a look around! :) "
               ghLink="https://github.com/suades/SUAD-Portfolio"
-              demoLink="https://snazzy-gnome-f7832a.netlify.app/"
+              demoLink="https://suad-portfolio.netlify.app/"
               tags={["React", "Node.js", "EmailJS", "Bootstrap"]} 
             />
           </Col>
