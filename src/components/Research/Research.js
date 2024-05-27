@@ -2,7 +2,6 @@ import React from "react";
 import Particle from "../Particle";
 import { Container, Row, Col } from "react-bootstrap";
 import ResearchCard from "./ResearchCard";
-import "./Research.scss";
 
 function Research() {
     
