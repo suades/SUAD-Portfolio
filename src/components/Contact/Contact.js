@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import Particle from "../Particle";
+
 
 function Contact() {
     const form = useRef();
@@ -21,6 +23,7 @@ function Contact() {
 
     return (
         <Container fluid className="contact-section" id="contact">
+            <Particle />
             <h1 className="project-heading">
                 <strong className="purple"> CONTACT ME </strong>
             </h1>
@@ -30,8 +33,8 @@ function Contact() {
                     <form ref={form} onSubmit={sendEmail} className="contact-form">
                         <input type="text" name="user_name" placeholder="NAME" required />
                         <input type="email" name="user_email" placeholder="EMAIL" required />
-                        <textarea name="message" placeholder="MESSAGE" required></textarea>
-                        <button type="submit" className="send-button"><i className="fa fa-paper-plane"></i>SEND</button>
+                        <textarea  name="message" placeholder="MESSAGE" required></textarea>
+                        <button style={{marginTop: "6%", marginBottom: "4%"}} type="submit" className="send-button"><i className="fa fa-paper-plane"></i>SEND</button>
                     </form>
                 </Col>
             </Row>

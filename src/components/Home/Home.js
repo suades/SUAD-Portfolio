@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Home2 from "./Home2";
+import About from "../About/About.js";
 import Type from "./Type";
 
 // Function to handle mouse enter event
@@ -28,7 +28,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <About />
     </section>
   );
 }

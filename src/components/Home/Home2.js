@@ -18,18 +18,15 @@ function Home2() {
               <span className="purple"> ABOUT ME </span> 
             </h1>
             <p className="home-about-body">
-              My name is Shlok Desai and I'm a Computer Science student at the University of Maryland - College Park. 
-              I love to play basketball and soccer with my friends. I'm also into videogames (Minecraft, GTA, FIFA, and others).
-              But at heart, I am a passionate and curious programmer. I began this journey when I was 11 and in the 5th grade. 
-              I joined an after school coding club at Munich International School (MIS). 
-              I learned how to code games on&nbsp;
-              <a class = "textlink" target="_blank" rel="noreferrer" href="https://scratch.mit.edu/users/suadesai17gmailcom/">Scratch.com</a>
-              &nbsp;with Javascript. Then I moved back to the Califorian city 
-              I was born in. I began learning new things in Gale Ranch Middle School including basic web and app development. 
-              Since then I have coded many projects including: apps, websites, 
-              machine learning algorithms; for personal projects,&nbsp; 
+              I'm Shlok Desai and I'm a Honors Computer Science student at the University of Maryland, College Park with a minor in Business Analytics. 
+              I enjoy working on machine learning and cognitive science projects particularly as an undergraduate RA at &nbsp;
+              <a class = "textlink" target="_blank" rel="noreferrer" href="https://www.icon-lab.org/people">ICON Lab</a>
+              &nbsp; 
+              I have also worked on other projects (including apps, programs, and websites), for fun, 
+              &nbsp; 
               <a class = "textlink" target="_blank" rel="noreferrer" href="https://devpost.com/suadesai17?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">hackathons</a> 
-              , internships, and more. You can see some of those projects/publications below and through my LinkedIn.
+              , or class. Outside of academics, I'm a member of Club Boxing 🥊 and love playing pickup basketball 🏀 at Eppley or football ⚽ at the engineering fields. I am also
+              a passionate sports fan, of the Warriors, FC Barcelona, and 49ers. Feel free to explore my portfolio and let's connect and collaborate!
             </p>
           </Col>
           <Col md={4} style={{ paddingBottom: 20 }}>

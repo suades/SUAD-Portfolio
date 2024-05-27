@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -9,9 +9,8 @@ import {
   AiOutlineUser,
   AiOutlinePhone,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -25,22 +24,14 @@ function NavBar() {
         updateNavbar(false);
       }
     };
-     // Add scroll event listener
-     window.addEventListener("scroll", scrollHandler);
+    // Add scroll event listener
+    window.addEventListener("scroll", scrollHandler);
 
-     // Clean up the event listener
-     return () => {
-       window.removeEventListener("scroll", scrollHandler);
-     };
-   }, []);
-
-   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      updateExpanded(false); // Collapse navbar after click in mobile view
-    }
-  };
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -49,13 +40,11 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      
       <Container>
-        <Navbar.Brand href="home" className="d-flex">
+        <Navbar.Brand as={Link} to="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
 
-        
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -67,38 +56,34 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
 
-
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="/">
             <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection('home')}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection('about')}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <Nav.Link as={Link} to="/research" onClick={() => updateExpanded(false)}>
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Research
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection('projects')}>
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+              <Nav.Link as={Link} to="/projects" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection('resume')}>
+              <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection('contact')}>
+              <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
                 <AiOutlinePhone style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>

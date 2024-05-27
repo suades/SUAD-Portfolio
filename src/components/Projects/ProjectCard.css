@@ -1,0 +1,15 @@
+.project-card-view img {
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+  .tag {
+    display: inline-block;
+    background-color: #002aff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-right: 5px;
+    font-size: 0.8em;
+  }

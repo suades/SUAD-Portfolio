@@ -3,14 +3,14 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import "./ProjectCard.css"; // Ensure this path matches your project structure
+import "../Projects/ProjectCard.css"; // Ensure this path matches your project structure
+import "../../style.css";
 
-function ProjectCards(props) {
+function ResearchCard(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" className="project-card-img" />
-      <Card.Body>
-      <Card.Title>
+      <Card.Body style={{ width:"100%"}}>
+        <Card.Title>
           <span className="Title__wrapper">{props.title}</span>
         </Card.Title>
         <Card.Text style={{ }}>
@@ -44,4 +44,4 @@ function ProjectCards(props) {
   );
 }
 
-export default ProjectCards;
+export default ResearchCard;

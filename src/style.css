@@ -20,7 +20,7 @@ html {
     #000000
   );
 
-  --imp-text-color:  #a67c00;
+  --imp-text-color:  #002aff;
 }
 
 .purple {
@@ -303,6 +303,18 @@ button:focus {
 
 }
 
+@media (max-width:767px){
+  .heading-name {
+    margin-top: 15%;
+    font-size: 1.2em !important;
+    padding-left: 45px !important;
+    color:white;
+    z-index: 1; 
+    position: relative; 
+  
+  }
+}
+
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   font-weight: 600 !important;
@@ -326,6 +338,21 @@ button:focus {
   background-clip: text;
   display: inline; /* Make sure this is not a block element */
   z-index: 1; /* Adjust as needed */
+  position: relative; /* Ensure they are positioned */
+}
+
+
+.Title__wrapper {
+  font-size: 1.3em;
+  font-weight: 300 !important;
+  background: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+  background-size: 200% 200%;
+  animation: shiny-gold 3s linear infinite;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline; /* Make sure this is not a block element */
+  z-index: 8; /* Adjust as needed */
   position: relative; /* Ensure they are positioned */
 }
 
@@ -571,7 +598,39 @@ button:focus {
   background: linear-gradient(45deg, #ffd700, #ffa700) !important;
   background-size: 200% 200%;
   animation: shinyGold 3s linear infinite;
-  border-color: #ffd700 !important;
+  border: 2px solid transparent !important;
+  position: relative; /* Required for the pseudo-element */
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 400% 400%;
+  z-index: -1;
+  border-radius: 5px; /* Match button's border radius if any */
+  transition: all 0.3s ease-in-out;
+  animation: rainbow 2s linear infinite;
+  opacity: 0;
+}
+
+.btn-primary:hover {
+  color: white !important;
+  background: black !important; /* Set background to black or transparent */
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+@keyframes shinyGold {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 @keyframes rainbow {
@@ -580,18 +639,11 @@ button:focus {
   100% { background-position: 0% 50%; }
 }
 
-.btn-primary:hover {
-  color: #fff !important;
-  background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
-  background-size: 200% 200%;
-  animation: rainbow 2s linear infinite;
-  border-color: transparent !important;
-}
-
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
