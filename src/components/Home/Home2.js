@@ -32,7 +32,7 @@ function Home2() {
           <Col md={4} style={{ paddingBottom: 20 }}>
             <Tilt>
               <div className="profile-card">
-                <img src={"profilepic.jpg"} alt="Profile Pic" className="profile-img"/>
+                <img src={"profilepic2.jpg"} alt="Profile Pic" className="profile-img"/>
               </div>
             </Tilt>
            </Col>
