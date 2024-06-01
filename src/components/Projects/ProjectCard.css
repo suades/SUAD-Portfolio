@@ -1,15 +1,59 @@
+.project-card-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .project-card-view img {
-    width: 100%;
-    height: 250px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensure the image covers the entire area */
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px; /* Reduce margin-top to tighten the space */
+}
+
+.tag {
+  display: inline-block;
+  background-color: #002aff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 7px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .scrollable-description {
+    overflow-y: scroll;
+    max-height: 200px;
   }
-  .tag {
-    display: inline-block;
-    background-color: #002aff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-top: 7px;
-    margin-right: 5px;
-    font-size: 0.8em;
-  }
+}

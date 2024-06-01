@@ -39,7 +39,7 @@ function Projects() {
               description="Wallet Wise takes advantage of available data in the housing market and a consumer's spending and income data to compute which properties they should look into purchasing by curating an Affordability and Preference Score. We incorporate data points such as the the square footage per dollar, the number of rooms, etc. We are able to display this information neatly and accurately to the user."
               ghLink="https://github.com/Joshua152/Bitcamp2024"
               demoLink="https://bitcamp-login.firebaseapp.com/"
-              tags={["React", "Firebase", "FastAPI", "HTML/CSS"]} 
+              tags={["React", "Firebase", "FastAPI", "Python"]} 
             />
           </Col>
 

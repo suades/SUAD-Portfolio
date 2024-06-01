@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import "../Projects/ProjectCard.css"; // Ensure this path matches your project structure
+import "../Projects/ProjectCard.css";
 import "../../style.css";
 
 function ResearchCard(props) {
@@ -13,7 +13,7 @@ function ResearchCard(props) {
         <Card.Title>
           <span className="Title__wrapper">{props.title}</span>
         </Card.Title>
-        <Card.Text style={{ }}>
+        <Card.Text className="scrollable-description">
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
