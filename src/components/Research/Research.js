@@ -14,6 +14,24 @@ function Research() {
                 </h1>
                 <p style={{ color: "white" }}> On top of my passion projects, I have worked on multiple research projects: </p>
                 
+
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                    <Col className="project-card">
+                        <ResearchCard
+                        isBlog={false}
+                        title="CogT Lab (project in progress)"
+                        description="At the CogT lab at Stanford, I contribute to the lab's research by engineering a robust preprocessing pipeline for ECG data, which includes denoising, filtering, and segmenting, significantly enhancing data quality for analysis.
+                        Additionally, I am co-developing a cross-modal autoencoder that integrates ECG and fMRI data to create unique patient fingerprints, facilitating advanced pattern analysis in the latent space. My work involves attending all lab meetings 
+                        and collaborating with other research groups, such as the CNS lab, to broaden my exposure to cutting-edge neuroscience research. These experiences continuously hone my skills in 
+                        data preprocessing, machine learning, and collaborative research, equipping me with a deep understanding of biomedical data analysis and its applications in healthcare."
+                        ghLink="https://github.com/suades/Masked-Autoencoder/tree/main"
+                        tags={["Python", "Autoencoder", "numpy", "scikit-learn", "ECG", "Matplotlib"]}
+                        />
+                    </Col>
+                </Row>
+
+
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
                     <Col className="project-card">
@@ -34,6 +52,7 @@ function Research() {
                     </Col>
                 </Row>
 
+                
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col className="project-card">
                         <ResearchCard
@@ -52,20 +71,6 @@ function Research() {
                     <Col className="project-card">
                         <ResearchCard
                         isBlog={false}
-                        title="The Role of Machine Learning (ML) in the Prediction of Particulate Matter 2.5 (PM2.5) Concentration"
-                        description="Particulate Matter refers to the pollutants in the air. These are directly linked to air pollution and increasingly poor air quality across the world. In recent years, the severity of poor air quality has increased significantly, to the point where it is damaging not only the environment but humans as well. It can cause a variety of symptoms, including premature death, and will damage water sources / waterways and ecosystems. Although there is no solution to getting rid of Particulate Matter, using Machine Learning there is a proven way to predict the concentration of Particulate Matter – specifically Particulate Matter 2.5 which is not visible to the human eye – in cities and countries, through a variety of neural networks and deep learning algorithms. Machine learning is an aspect of artificial intelligence that hopes to gain the predictive and analytical ability of humans. Machine learning uses various amounts of data and algorithms (that are meant to be like a human brain with individual nodes acting like neurons in the human brain and an activation threshold, like human brains) to make predictions. This can be done by using Particulate Matter data from air monitoring systems, in addition to satellite and land data. This article analyzes six different and recent research papers by explaining their methodology (algorithm(s) used, training and testing method, results, limitations, and importance). Their datasets, locations, algorithms used, and results are all different, and will help guide and advance current and future research on this topic. This article provides context on this important crossroad between predictive technology and the environment / human health."
-                        ghLink=""
-                        demoLink="https://scienceyouth.org/web/viewer.php?id=115&ckattempt=1"
-                        tags={["Literature Review", "Machine Learning"]}
-                        />
-                    </Col>
-                </Row>
-
-                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-                    <Col className="project-card">
-                        <ResearchCard
-                        isBlog={false}
                         title="Applying Biorobotics to Spinal-Cord Injury Patients"
                         description="This project, conducted under the guidance of Professor Reikensmeyer at the UC Irvine Biorobotics Lab, aimed to develop a head-controlled mouse for spinal-cord injury (SCI) patients. Using Solidworks, we designed the head mouse, and then prototyped it with hardware components like a breadboard, IMU, and custom circuitry. The software for the device was programmed in C++ on an Arduino platform. This innovative solution allows SCI patients to interact with computers more easily, enhancing their accessibility and quality of life. Our efforts were recognized with a UC Irvine research fellowship and a California state scholarship, underscoring the project's impact and potential."
                         ghLink="https://github.com/suades/UCI-Biorobotics-Lab/tree/main"
@@ -75,6 +80,22 @@ function Research() {
                     </Col>
 
                 </Row>
+
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                    <Col className="project-card">
+                        <ResearchCard
+                        isBlog={false}
+                        title="The Role of Machine Learning (ML) in the Prediction of Particulate Matter 2.5 (PM2.5) Concentration"
+                        description="Particulate Matter refers to the pollutants in the air. These are directly linked to air pollution and increasingly poor air quality across the world. In recent years, the severity of poor air quality has increased significantly, to the point where it is damaging not only the environment but humans as well. It can cause a variety of symptoms, including premature death, and will damage water sources / waterways and ecosystems. Although there is no solution to getting rid of Particulate Matter, using Machine Learning there is a proven way to predict the concentration of Particulate Matter – specifically Particulate Matter 2.5 which is not visible to the human eye – in cities and countries, through a variety of neural networks and deep learning algorithms. Machine learning is an aspect of artificial intelligence that hopes to gain the predictive and analytical ability of humans. Machine learning uses various amounts of data and algorithms (that are meant to be like a human brain with individual nodes acting like neurons in the human brain and an activation threshold, like human brains) to make predictions. This can be done by using Particulate Matter data from air monitoring systems, in addition to satellite and land data. This article analyzes six different and recent research papers by explaining their methodology (algorithm(s) used, training and testing method, results, limitations, and importance). Their datasets, locations, algorithms used, and results are all different, and will help guide and advance current and future research on this topic. This article provides context on this important crossroad between predictive technology and the environment / human health."
+                        ghLink=""
+                        demoLink="https://scienceyouth.org/web/viewer.php?id=115&ckattempt=1"
+                        tags={["Literature Review", "Machine Learning"]}
+                        />
+                    </Col>
+                </Row>
+
+                
             
             </Container>
         </Container>

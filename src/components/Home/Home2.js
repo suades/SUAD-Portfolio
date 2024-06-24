@@ -26,7 +26,7 @@ function Home2() {
               &nbsp; 
               <a class = "textlink" target="_blank" rel="noreferrer" href="https://devpost.com/suadesai17?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">hackathons</a> 
               , or class. Outside of academics, I'm a member of Club Boxing 🥊 and love playing pickup basketball 🏀 at Eppley or football ⚽ at the engineering fields. I am also
-              a passionate sports fan, of the Warriors, FC Barcelona, and 49ers. Feel free to explore my portfolio and let's connect and collaborate!
+              a passionate sports fan, of the Golden State Warriors, FC Barcelona, and 49ers. Feel free to explore my portfolio and let's connect and collaborate!
             </p>
           </Col>
           <Col md={4} style={{ paddingBottom: 20 }}>

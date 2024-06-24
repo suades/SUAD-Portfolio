@@ -1,0 +1,59 @@
+.tech-icons {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .tech-icons::after {
+    content: attr(data-tech);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(10px);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .tech-icons:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  
+  .tech-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    transform: scale(1.2);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .tech-icons:hover::before {
+    opacity: 1;
+  }
+  
+  .tech-icons:hover {
+    background: rgba(0, 0, 0, 0.827);
+    transition: background 0.3s ease;
+    border-radius: 10px;
+  }
+  
+
+  .devicon-devicon-plain {
+    max-width: 2em;
+  }
+  
+  /* if you want to change the original color */
+  .devicon-devicon-plain path {
+    fill: #4691f6;
+  }
