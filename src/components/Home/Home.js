@@ -20,7 +20,7 @@ function Home() {
               </div>
 
               <h2 className="heading-name">
-                <strong id="main-name"> Welcome to my Portofolio</strong>
+                <strong id="main-name"> Welcome to my Portfolio</strong>
               </h2>    
             </Col>
 
